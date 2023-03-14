@@ -8,7 +8,7 @@ namespace WorkShiftManager
 {
     public class Employee
     {
-        // Proprietăți
+        // Proprietati
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int EmployeeID { get; set; }
@@ -25,7 +25,7 @@ namespace WorkShiftManager
             Department = department;
         }
 
-        // Metodă de afișare a informațiilor despre angajat
+        // Metoda de afisare a informatiilor despre angajat
         public void DisplayEmployeeInfo()
         {
             Console.WriteLine("Nume: {0} {1}", FirstName, LastName);

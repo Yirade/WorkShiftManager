@@ -8,37 +8,43 @@ namespace WorkShiftManager
 {
     public class Schedule
     {
-        // Proprietăți
-        public List<Shift> Shifts { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
+        // Proprietati
+        public string ScheduleName { get; set; }
+        public List<Workday> Workdays { get; set; }
 
         // Constructor
-        public Schedule(DateTime startDate, DateTime endDate)
+        public Schedule(string scheduleName)
         {
-            Shifts = new List<Shift>();
-            StartDate = startDate;
-            EndDate = endDate;
+            ScheduleName = scheduleName;
+            Workdays = new List<Workday>();
         }
 
-        // Metodă de adăugare a unei ture la programul de lucru
-        public void AddShift(Shift shift)
+        // Metode
+        public void AddWorkday(string dayOfWeek, TimeSpan startTime, TimeSpan endTime)
         {
-            Shifts.Add(shift);
+            Workdays.Add(new Workday(dayOfWeek, startTime, endTime));
         }
 
-        // Metodă de afișare a informațiilor despre programul de lucru
+        public TimeSpan GetTotalWorkHours()
+        {
+            TimeSpan totalWorkHours = TimeSpan.Zero;
+
+            foreach (Workday workday in Workdays)
+            {
+                totalWorkHours += workday.GetWorkHours();
+            }
+
+            return totalWorkHours;
+        }
+
         public void DisplaySchedule()
         {
-            Console.WriteLine("Programul de lucru:");
-            Console.WriteLine("Data de început: {0}", StartDate.ToShortDateString());
-            Console.WriteLine("Data de sfârșit: {0}", EndDate.ToShortDateString());
-            Console.WriteLine();
-            foreach (Shift shift in Shifts)
+            Console.WriteLine("Program: {0}", ScheduleName);
+            foreach (Workday workday in Workdays)
             {
-                shift.DisplayShiftInfo();
-                Console.WriteLine();
+                Console.WriteLine("{0}:\t\t{1,5} - {2}", workday.DayOfWeek, workday.StartTime, workday.EndTime);
             }
+            Console.WriteLine("Totalul orelor de lucru: {0}", GetTotalWorkHours());
         }
     }
 }

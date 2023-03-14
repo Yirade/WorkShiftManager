@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WorkShiftManager
 {
-    class Workday
+    public class Workday
     {
         public string DayOfWeek { get; set; }
         public TimeSpan StartTime { get; set; }

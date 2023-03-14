@@ -8,7 +8,7 @@ namespace WorkShiftManager
 {
     public class Department
     {
-        // Proprietăți
+        // Proprietati
         public string Name { get; set; }
         public List<Employee> Employees { get; set; }
         public Schedule Schedule { get; set; }
@@ -21,13 +21,13 @@ namespace WorkShiftManager
             Schedule = schedule;
         }
 
-        // Metodă de adăugare a unui angajat la departament
+        // Metoda de adaugare a unui angajat la departament
         public void AddEmployee(Employee employee)
         {
             Employees.Add(employee);
         }
 
-        // Metodă de afișare a informațiilor despre departament
+        // Metoda de afisare a informatiilor despre departament
         public void DisplayDepartmentInfo()
         {
             Console.WriteLine("Departament: {0}", Name);
@@ -35,7 +35,7 @@ namespace WorkShiftManager
             Console.WriteLine("Programul de lucru al departamentului:");
             Schedule.DisplaySchedule();
             Console.WriteLine();
-            Console.WriteLine("Angajați:");
+            Console.WriteLine("Angajati:");
             foreach (Employee employee in Employees)
             {
                 employee.DisplayEmployeeInfo();
