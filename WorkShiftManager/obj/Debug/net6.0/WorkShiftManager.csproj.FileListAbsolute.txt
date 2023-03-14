@@ -1,0 +1,15 @@
+D:\GitHub\WorkShiftManager\WorkShiftManager\obj\Debug\net6.0\WorkShiftManager.csproj.AssemblyReference.cache
+D:\GitHub\WorkShiftManager\WorkShiftManager\obj\Debug\net6.0\WorkShiftManager.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\WorkShiftManager\WorkShiftManager\obj\Debug\net6.0\WorkShiftManager.AssemblyInfoInputs.cache
+D:\GitHub\WorkShiftManager\WorkShiftManager\obj\Debug\net6.0\WorkShiftManager.AssemblyInfo.cs
+D:\GitHub\WorkShiftManager\WorkShiftManager\obj\Debug\net6.0\WorkShiftManager.csproj.CoreCompileInputs.cache
+D:\GitHub\WorkShiftManager\WorkShiftManager\bin\Debug\net6.0\WorkShiftManager.exe
+D:\GitHub\WorkShiftManager\WorkShiftManager\bin\Debug\net6.0\WorkShiftManager.deps.json
+D:\GitHub\WorkShiftManager\WorkShiftManager\bin\Debug\net6.0\WorkShiftManager.runtimeconfig.json
+D:\GitHub\WorkShiftManager\WorkShiftManager\bin\Debug\net6.0\WorkShiftManager.dll
+D:\GitHub\WorkShiftManager\WorkShiftManager\bin\Debug\net6.0\WorkShiftManager.pdb
+D:\GitHub\WorkShiftManager\WorkShiftManager\obj\Debug\net6.0\WorkShiftManager.dll
+D:\GitHub\WorkShiftManager\WorkShiftManager\obj\Debug\net6.0\refint\WorkShiftManager.dll
+D:\GitHub\WorkShiftManager\WorkShiftManager\obj\Debug\net6.0\WorkShiftManager.pdb
+D:\GitHub\WorkShiftManager\WorkShiftManager\obj\Debug\net6.0\WorkShiftManager.genruntimeconfig.cache
+D:\GitHub\WorkShiftManager\WorkShiftManager\obj\Debug\net6.0\ref\WorkShiftManager.dll
