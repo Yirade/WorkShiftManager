@@ -39,13 +39,13 @@ namespace WorkShiftManager
 
         public string DisplaySchedule()
         {
-            string Buff = $"Program: {ScheduleName}" ;
+            string Buff = $"\nProgram: {ScheduleName}" ;
 
             foreach (Workday workday in Workdays)
             {
-                Buff += $"{workday.DayOfWeek}:\t\t{workday.StartTime,5} - {workday.EndTime}\n";
+                Buff += $"\n{workday.DayOfWeek}:\t\t{workday.StartTime,5} - {workday.EndTime}";
             }
-            Buff += $"Totalul orelor de lucru: {GetTotalWorkHours()}";
+            Buff += $"\nTotalul orelor de lucru: {GetTotalWorkHours()}";
 
             return Buff;
         }

@@ -30,7 +30,7 @@ namespace WorkShiftManager
         // Metoda de afisare a informatiilor despre departament
         public string DisplayDepartmentInfo()
         {
-            string Buff = $"Departament: {Name}\nProgramul de lucru al departamentului: {Schedule.DisplaySchedule()}\nAngajati:";
+            string Buff = $"Departament: {Name}\n\nProgramul de lucru al departamentului: {Schedule.DisplaySchedule()}\n\nAngajati:\n";
             foreach (Employee employee in Employees)
             {
                 Buff += employee.DisplayEmployeeInfo();
