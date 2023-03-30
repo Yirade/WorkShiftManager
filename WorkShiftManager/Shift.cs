@@ -24,12 +24,9 @@ namespace WorkShiftManager
         }
 
         // Metoda de afisare a informatiilor despre tura
-        public void DisplayShiftInfo()
+        public string DisplayShiftInfo()
         {
-            Console.WriteLine("Data: {0}", ShiftDate.ToShortDateString());
-            Console.WriteLine("Ora de inceput: {0}", StartTime);
-            Console.WriteLine("Ora de sfarsit: {0}", EndTime);
-            Console.WriteLine("Angajat: {0} {1}", ShiftEmployee.FirstName, ShiftEmployee.LastName);
+            return $"Data: {ShiftDate.ToShortDateString()}\nOra de inceput: {EndTime}\nAngajat: {ShiftEmployee.FirstName} {ShiftEmployee.LastName}";
         }
     }
 }

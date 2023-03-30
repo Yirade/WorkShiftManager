@@ -37,14 +37,17 @@ namespace WorkShiftManager
             return totalWorkHours;
         }
 
-        public void DisplaySchedule()
+        public string DisplaySchedule()
         {
-            Console.WriteLine("Program: {0}", ScheduleName);
+            string Buff = $"Program: {ScheduleName}" ;
+
             foreach (Workday workday in Workdays)
             {
-                Console.WriteLine("{0}:\t\t{1,5} - {2}", workday.DayOfWeek, workday.StartTime, workday.EndTime);
+                Buff += $"{workday.DayOfWeek}:\t\t{workday.StartTime,5} - {workday.EndTime}\n";
             }
-            Console.WriteLine("Totalul orelor de lucru: {0}", GetTotalWorkHours());
+            Buff += $"Totalul orelor de lucru: {GetTotalWorkHours()}";
+
+            return Buff;
         }
     }
 }

@@ -28,18 +28,14 @@ namespace WorkShiftManager
         }
 
         // Metoda de afisare a informatiilor despre departament
-        public void DisplayDepartmentInfo()
+        public string DisplayDepartmentInfo()
         {
-            Console.WriteLine("Departament: {0}", Name);
-            Console.WriteLine();
-            Console.WriteLine("Programul de lucru al departamentului:");
-            Schedule.DisplaySchedule();
-            Console.WriteLine();
-            Console.WriteLine("Angajati:");
+            string Buff = $"Departament: {Name}\nProgramul de lucru al departamentului: {Schedule.DisplaySchedule()}\nAngajati:";
             foreach (Employee employee in Employees)
             {
-                employee.DisplayEmployeeInfo();
+                Buff += employee.DisplayEmployeeInfo();
             }
+            return Buff;
         }
     }
 }

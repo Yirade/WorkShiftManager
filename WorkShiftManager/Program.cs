@@ -21,7 +21,7 @@ namespace WorkShiftManager
             department.AddEmployee(new Employee("Andrei", "Popa", 1003, 3200, "Vanzari"));
 
             // Afisam informatiile despre departament
-            department.DisplayDepartmentInfo();
+            Console.WriteLine(department.DisplayDepartmentInfo());
 
             // Programul a fost finalizat, asteptam ca utilizatorul sa apese o tasta
             Console.ReadKey();

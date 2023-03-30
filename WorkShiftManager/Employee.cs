@@ -26,12 +26,14 @@ namespace WorkShiftManager
         }
 
         // Metoda de afisare a informatiilor despre angajat
-        public void DisplayEmployeeInfo()
+        public string DisplayEmployeeInfo()
         {
-            Console.WriteLine("Nume: {0} {1}", FirstName, LastName);
-            Console.WriteLine("ID angajat: {0}", EmployeeID);
-            Console.WriteLine("Salariu: {0}", Salary);
-            Console.WriteLine("Departament: {0}", Department);
+            return $"Nume: {FirstName} {LastName}\nID angajat: {EmployeeID}\nSalariu: {Salary}\nDepartament: {Department}";
+            
+            //Console.WriteLine("Nume: {0} {1}", FirstName, LastName);
+            //Console.WriteLine("ID angajat: {0}", EmployeeID);
+            //Console.WriteLine("Salariu: {0}", Salary);
+            //Console.WriteLine("Departament: {0}", Department);
         }
     }
 }
