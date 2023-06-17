@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.33502.453
+VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkShiftManager", "WorkShiftManager.csproj", "{1277D883-C9F6-406B-B2E2-A4FC1A18CC4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkShiftManager", "WorkShiftManager\WorkShiftManager.csproj", "{D396E47D-90E5-4097-A774-E9A09E7FFAC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1277D883-C9F6-406B-B2E2-A4FC1A18CC4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1277D883-C9F6-406B-B2E2-A4FC1A18CC4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1277D883-C9F6-406B-B2E2-A4FC1A18CC4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1277D883-C9F6-406B-B2E2-A4FC1A18CC4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D396E47D-90E5-4097-A774-E9A09E7FFAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D396E47D-90E5-4097-A774-E9A09E7FFAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D396E47D-90E5-4097-A774-E9A09E7FFAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D396E47D-90E5-4097-A774-E9A09E7FFAC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C0C0877E-A5A2-46A6-9D17-8A328D093C5D}
+		SolutionGuid = {6671B781-9915-4D2F-BF27-744576E7F541}
 	EndGlobalSection
 EndGlobal

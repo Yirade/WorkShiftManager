@@ -1,0 +1,11 @@
+C:\Users\genny\source\repos\WorkShiftManager\WorkShiftManager\bin\Debug\WorkShiftManager.exe.config
+C:\Users\genny\source\repos\WorkShiftManager\WorkShiftManager\bin\Debug\WorkShiftManager.exe
+C:\Users\genny\source\repos\WorkShiftManager\WorkShiftManager\bin\Debug\WorkShiftManager.pdb
+C:\Users\genny\source\repos\WorkShiftManager\WorkShiftManager\obj\Debug\WorkShiftManager.csproj.AssemblyReference.cache
+C:\Users\genny\source\repos\WorkShiftManager\WorkShiftManager\obj\Debug\WorkShiftManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\genny\source\repos\WorkShiftManager\WorkShiftManager\obj\Debug\WorkShiftManager.csproj.CoreCompileInputs.cache
+C:\Users\genny\source\repos\WorkShiftManager\WorkShiftManager\obj\Debug\WorkShiftManager.exe
+C:\Users\genny\source\repos\WorkShiftManager\WorkShiftManager\obj\Debug\WorkShiftManager.pdb
+C:\Users\genny\source\repos\WorkShiftManager\WorkShiftManager\obj\Debug\WorkShiftManager.Form1.resources
+C:\Users\genny\source\repos\WorkShiftManager\WorkShiftManager\obj\Debug\WorkShiftManager.csproj.GenerateResource.cache
+C:\Users\genny\source\repos\WorkShiftManager\WorkShiftManager\obj\Debug\WorkShiftManager.Properties.Resources.resources

@@ -1,0 +1,22 @@
+IT Department
+Program Normal
+2
+John
+Doe
+5000
+1
+Jane
+Smith
+4500
+2
+HR Department
+Program Flexibil
+2
+Mark
+Johnson
+6000
+1
+Sarah
+Williams
+5500
+2
