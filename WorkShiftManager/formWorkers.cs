@@ -46,7 +46,6 @@ namespace WorkShiftManager
                 catch (Exception ex)
                 {
                     workerElement.ImgElement.Image = Properties.Resources.user;
-                    //MessageBox.Show("Errore durante il caricamento dell'immagine del profilo: " + ex.Message);
                 }
                 workerElement.LblName.Text = worker.Name;
                 workerElement.LblEmail.Text = worker.Email;

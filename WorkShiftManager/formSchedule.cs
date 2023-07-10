@@ -54,15 +54,28 @@ namespace WorkShiftManager
                     // Imposta le nuove immagini di profilo
                     if (i == 0)
                     {
-                        departmentElement.ImgElement3.Image = Image.FromFile(profileImagePath);
+                        try { departmentElement.ImgElement3.Image = Image.FromFile(profileImagePath); }
+                        catch (Exception ex)
+                        {
+                            departmentElement.ImgElement3.Image = Properties.Resources.user;
+                        }
+                        //departmentElement.ImgElement3.Image = Image.FromFile(profileImagePath);
                     }
                     else if (i == 1)
                     {
-                        departmentElement.ImgElement2.Image = Image.FromFile(profileImagePath);
+                        try { departmentElement.ImgElement2.Image = Image.FromFile(profileImagePath); }
+                        catch (Exception ex)
+                        {
+                            departmentElement.ImgElement2.Image = Properties.Resources.user;
+                        }
                     }
                     else if (i == 2)
                     {
-                        departmentElement.ImgElement1.Image = Image.FromFile(profileImagePath);
+                        try { departmentElement.ImgElement1.Image = Image.FromFile(profileImagePath); }
+                        catch (Exception ex)
+                        {
+                            departmentElement.ImgElement1.Image = Properties.Resources.user;
+                        }
                     }
                 }
             }
@@ -79,7 +92,12 @@ namespace WorkShiftManager
                     if (workerElement.ImgElement3.Image == null)
                     {
                         string profileImagePath = worker.ProfileImagePath;
-                        workerElement.ImgElement3.Image = Image.FromFile(profileImagePath);
+                        try { workerElement.ImgElement3.Image = Image.FromFile(profileImagePath); }
+                        catch (Exception ex)
+                        {
+                            workerElement.ImgElement3.Image = Properties.Resources.user;
+                        }
+                        //workerElement.ImgElement3.Image = Image.FromFile(profileImagePath);
                         workerElement.LblName.Text = worker.Name;
                     }
 
