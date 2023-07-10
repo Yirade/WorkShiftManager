@@ -1,0 +1,64 @@
+# Files generati dal compilatore di Visual Studio
+*.obj
+*.dll
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+*.unsuccessfulbuild
+ipch/
+obj/
+TestResults/
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+
+# Files generati da NuGet
+packages/
+*.nupkg
+*.paket.sha512
+paket-files/
+.paket/
+
+# File generati da Visual Studio
+*.vscode/
+.vs/
+*.sln.docstates
+
+# Altri file generati da strumenti di sviluppo
+_ReSharper*/
+*.resharper*
+[Tt]est[Rr]esult*
+*.snk
+
+# Altri file e cartelle generati dal sistema
+[Dd]esktop.ini
+*.log
+Thumbs.db
+*.swp
+*~
+*.bak
+*.cache
+*.bak
+*.lock
+
+# Cartelle non necessarie
+bin/
+obj/
+packages/
+.vs/
