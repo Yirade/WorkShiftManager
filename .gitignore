@@ -56,3 +56,13 @@ Thumbs.db
 *.cache
 *.bak
 *.lock
+
+# Cartelle non necessarie
+bin/
+obj/
+packages/
+.vs/
+WorkShiftManager/bin/
+WorkShiftManager/obj/
+WorkShiftManager/packages/
+WorkShiftManager/.vs/
