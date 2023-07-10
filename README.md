@@ -8,9 +8,21 @@ Aplicația permite crearea unui program de lucru pentru fiecare departament din 
 
 # Cum să rulezi proiectul 🏃‍♂️
 
-- Descarcă sau clonează acest repository
-- Deschide soluția WorkShiftManager.sln în Visual Studio
-- Rulează aplicația folosind butonul “Start” din Visual Studio sau apăsând combinația de taste F5
+Există două modalități prin care poți rula proiectul:
+## Varianta 1: Descarcă un release
+
+- Accesează pagina Releases a acestui repository.
+- Alege versiunea dorită din lista de release-uri disponibile.
+- Descarcă arhiva corespunzătoare versiunii selectate.
+- Extrage conținutul arhivei pe computerul tău.
+- Găsește fișierul executabil (.exe) în interiorul arhivei.
+- Rulează fișierul executabil pentru a porni aplicația.
+
+## Varianta 2: Descarcă sau clonează repository-ul
+
+- Descarcă sau clonează acest repository.
+- Deschide soluția WorkShiftManager.sln în Visual Studio.
+- Rulează aplicația folosind butonul "Start" din Visual Studio sau apăsând combinația de taste F5.
 
 # Tehnologii utilizate 🛠️
 
