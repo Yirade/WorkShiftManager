@@ -1,0 +1,104 @@
+<Data>
+  <Department>
+    <DepName>Human Resources</DepName>
+    <Worker>
+      <Id>0</Id>
+      <Name>Ecoboaea Denis</Name>
+      <Email>gennyeco2002wiko@gmail.com</Email>
+      <ProfileImagePath>Data\0.png</ProfileImagePath>
+      <Schedule />
+    </Worker>
+    <Worker>
+      <Id>3</Id>
+      <Name>nene doi</Name>
+      <Email>nene@doi</Email>
+      <ProfileImagePath>Data\3.png</ProfileImagePath>
+      <Schedule>
+        <Sunday />
+        <Monday />
+        <Tuesday />
+        <Wednesday />
+        <Thursday />
+        <Friday />
+        <Saturday />
+      </Schedule>
+    </Worker>
+    <Worker>
+      <Id>4</Id>
+      <Name>doi nene</Name>
+      <Email>doi@nene</Email>
+      <ProfileImagePath>Data\4.png</ProfileImagePath>
+      <Schedule>
+        <Sunday />
+        <Monday />
+        <Tuesday />
+        <Wednesday />
+        <Thursday />
+        <Friday />
+        <Saturday />
+      </Schedule>
+    </Worker>
+  </Department>
+  <Department>
+    <DepName>Manager</DepName>
+    <Worker>
+      <Id>1</Id>
+      <Name>Ely</Name>
+      <Email>the.qeen@royal.gg</Email>
+      <ProfileImagePath>Data\1.jpg</ProfileImagePath>
+      <Schedule>
+        <Sunday />
+        <Monday />
+        <Tuesday />
+        <Wednesday />
+        <Thursday />
+        <Friday />
+        <Saturday />
+      </Schedule>
+    </Worker>
+  </Department>
+  <Department>
+    <DepName>IT</DepName>
+    <Worker>
+      <Id>2</Id>
+      <Name>nene unu</Name>
+      <Email>nene@unu</Email>
+      <ProfileImagePath>Data\2.png</ProfileImagePath>
+      <Schedule>
+        <Sunday />
+        <Monday />
+        <Tuesday />
+        <Wednesday />
+        <Thursday />
+        <Friday />
+        <Saturday />
+      </Schedule>
+    </Worker>
+  </Department>
+  <Department>
+    <DepName>Doctor</DepName>
+    <Worker>
+      <Id>5</Id>
+      <Name>Tanti</Name>
+      <Email>tanti@doctor.com</Email>
+      <ProfileImagePath>Data\5-new1.png</ProfileImagePath>
+      <Schedule />
+    </Worker>
+  </Department>
+  <Department>
+    <DepName>Doctor</DepName>
+    <Worker>
+      <Id>99</Id>
+      <Name>Tanti</Name>
+      <Email>tanti@doctor.com</Email>
+      <ProfileImagePath>Data\5-new1.png</ProfileImagePath>
+      <Schedule />
+    </Worker>
+  </Department>
+  <Department>
+    <DepName>Doctor1</DepName>
+  </Department>
+  <Department>
+    <DepName>Doctor2</DepName>
+  </Department>
+</Data>
