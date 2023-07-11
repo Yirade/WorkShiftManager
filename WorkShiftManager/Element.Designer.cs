@@ -158,6 +158,7 @@
             this.btnMore.Size = new System.Drawing.Size(30, 30);
             this.btnMore.TabIndex = 11;
             this.btnMore.UseTransparentBackground = true;
+            this.btnMore.Visible = false;
             // 
             // imgElement
             // 

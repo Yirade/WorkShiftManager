@@ -23,7 +23,11 @@ namespace WorkShiftManager
             Worker worker = Globals.DataManager.GetWorkerById(Id);
             txtName.Text = worker.Name;
             txtEmail.Text = worker.Email;
-            imgProfile.Image = Image.FromFile(worker.ProfileImagePath);
+            try { imgProfile.Image = Image.FromFile(worker.ProfileImagePath); }
+            catch (Exception ex)
+            {
+                imgProfile.Image = Properties.Resources.user;
+            }
             selectedImagePath = worker.ProfileImagePath;
 
             foreach (Department department in Globals.DataManager.Departments)
