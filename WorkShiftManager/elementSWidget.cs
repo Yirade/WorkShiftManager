@@ -32,6 +32,8 @@ namespace WorkShiftManager
             get { return imgElement1; }
             set { imgElement1 = value; }
         }
+        public int workerId { get; set; }
+        public bool isDepartment { get; set; }
         public SWidgetElement()
         {
             InitializeComponent();
@@ -60,16 +62,33 @@ namespace WorkShiftManager
         private void btnOpen_Click(object sender, EventArgs e)
         {
             Form modalEdit = new Form();
-            using (modalScheduleDetail modal = new modalScheduleDetail())
-            {
-                modalEdit.StartPosition = FormStartPosition.CenterScreen;
 
-                if (modal.ShowDialog() == DialogResult.OK)
+            if (isDepartment)
+            {
+                using (modalScheduleDetail modal = new modalScheduleDetail())
                 {
-                    Globals.DataManager.SaveData("data.xml"); // Salva i dati
-                    Globals.DataManager.LoadData("data.xml"); // Ricarica i dati
+                    modalEdit.StartPosition = FormStartPosition.CenterScreen;
+
+                    if (modal.ShowDialog() == DialogResult.OK)
+                    {
+                        Globals.DataManager.SaveData("data.xml"); // Salva i dati
+                        Globals.DataManager.LoadData("data.xml"); // Ricarica i dati
+                    }
                 }
             }
+            else {
+                using (modalScheduleDetail modal = new modalScheduleDetail(workerId))
+                {
+                    modalEdit.StartPosition = FormStartPosition.CenterScreen;
+
+                    if (modal.ShowDialog() == DialogResult.OK)
+                    {
+                        Globals.DataManager.SaveData("data.xml"); // Salva i dati
+                        Globals.DataManager.LoadData("data.xml"); // Ricarica i dati
+                    }
+                }
+            }
+            
         }
 
         private void imgElement2_Click(object sender, EventArgs e)

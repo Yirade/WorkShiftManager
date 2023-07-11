@@ -20,6 +20,11 @@ namespace WorkShiftManager
 
         public void SaveData(string filename)
         {
+            Array daysOfWeek = Enum.GetValues(typeof(DayOfWeek));
+            Array reorderedDaysOfWeek = new DayOfWeek[7];
+            Array.Copy(daysOfWeek, 1, reorderedDaysOfWeek, 0, 6); // Copia da lunedì a sabato
+            reorderedDaysOfWeek.SetValue(DayOfWeek.Sunday, 6); // Imposta la domenica come ultimo giorno
+
             if (Departments != null)
             {
                 XmlDocument xmlDoc = new XmlDocument();
@@ -415,6 +420,35 @@ namespace WorkShiftManager
             }
         }
 
+        public void SetWorkerSchedule(int workerId, string dayName, TimeSpan startTime, TimeSpan endTime)
+        {
+            Worker worker = GetWorkerById(workerId);
+            if (worker != null)
+            {
+                DayOfWeek dayOfWeek;
+                if (Enum.TryParse(dayName, out dayOfWeek))
+                {
+                    // Verifica se il lavoratore ha già un orario di lavoro per il giorno specificato
+                    if (worker.Schedule.ContainsKey(dayOfWeek))
+                    {
+                        // Ottieni l'orario di lavoro esistente per il giorno specificato
+                        WorkSchedule workSchedule = worker.Schedule[dayOfWeek];
+
+                        // Aggiorna l'orario di lavoro esistente con i nuovi valori
+                        workSchedule.StartTime = startTime;
+                        workSchedule.EndTime = endTime;
+                    }
+                    else
+                    {
+                        // Crea un nuovo orario di lavoro per il giorno specificato
+                        WorkSchedule newWorkSchedule = new WorkSchedule(startTime, endTime);
+
+                        // Aggiungi l'orario di lavoro al lavoratore
+                        worker.Schedule.Add(dayOfWeek, newWorkSchedule);
+                    }
+                }
+            }
+        }
 
     }
 }

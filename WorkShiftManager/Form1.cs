@@ -223,11 +223,15 @@ namespace WorkShiftManager
         {
             if (about == null)
             {
+                modalAboutMe form = new modalAboutMe();
+                form.StartPosition = FormStartPosition.CenterParent;
+                form.ShowDialog();
+                /*
                 about = new formAbout();
                 about.FormClosed += About_FormClosed;
                 about.MdiParent = this;
                 about.Dock = DockStyle.Fill;
-                about.Show();
+                about.Show();*/
             }
             else
             {

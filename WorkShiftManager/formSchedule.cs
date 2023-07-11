@@ -41,6 +41,7 @@ namespace WorkShiftManager
 
                 // Imposta il nome del dipartimento
                 departmentElement.LblName.Text = department.Name;
+                departmentElement.isDepartment = true;
 
                 // Aggiungi l'elemento del dipartimento al flowSchedule
                 flowSchedule.Controls.Add(departmentElement);
@@ -99,8 +100,10 @@ namespace WorkShiftManager
                         }
                         //workerElement.ImgElement3.Image = Image.FromFile(profileImagePath);
                         workerElement.LblName.Text = worker.Name;
+                        
                     }
-
+                    workerElement.workerId = worker.Id;
+                    workerElement.isDepartment = false;
                     // Aggiungi l'elemento del worker al flowSchedule
                     flowSchedule.Controls.Add(workerElement);
                 }
@@ -116,22 +119,28 @@ namespace WorkShiftManager
 
         private void SearchBox_TextChanged(object sender, EventArgs e)
         {
-            string searchQuery = SearchBox.Text.ToLower();
-
-            List<Worker> workers = new List<Worker>();
-
-            foreach (Department department in Globals.DataManager.Departments)
+            if (string.IsNullOrWhiteSpace(SearchBox.Text)) 
             {
-                foreach (Worker worker in department.Workers)
+                UpdateSchedule();
+            }else
+            {
+                string searchQuery = SearchBox.Text.ToLower();
+
+                List<Worker> workers = new List<Worker>();
+
+                foreach (Department department in Globals.DataManager.Departments)
                 {
-                    if (worker.Name.ToLower().Contains(searchQuery) || worker.Email.ToLower().Contains(searchQuery))
+                    foreach (Worker worker in department.Workers)
                     {
-                        workers.Add(worker);
+                        if (worker.Name.ToLower().Contains(searchQuery) || worker.Email.ToLower().Contains(searchQuery))
+                        {
+                            workers.Add(worker);
+                        }
                     }
                 }
-            }
 
-            ShowSearchResults(workers);
+                ShowSearchResults(workers);
+            }
         }
 
         private void ShowSearchResults(List<Worker> workers)
@@ -149,7 +158,11 @@ namespace WorkShiftManager
                 if (workerElement.ImgElement3.Image == null)
                 {
                     string profileImagePath = worker.ProfileImagePath;
-                    workerElement.ImgElement3.Image = Image.FromFile(profileImagePath);
+                    try { workerElement.ImgElement3.Image = Image.FromFile(profileImagePath); }
+                    catch (Exception ex)
+                    {
+                        workerElement.ImgElement3.Image = Properties.Resources.user;
+                    }
                     workerElement.LblName.Text = worker.Name;
                 }
 

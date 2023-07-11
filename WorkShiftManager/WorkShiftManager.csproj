@@ -121,6 +121,12 @@
     </Compile>
     <Compile Include="Globals.cs" />
     <Compile Include="mdiProperties.cs" />
+    <Compile Include="modalAboutMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalAboutMe.Designer.cs">
+      <DependentUpon>modalAboutMe.cs</DependentUpon>
+    </Compile>
     <Compile Include="modalAddDepartment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,12 @@
     </Compile>
     <Compile Include="modalAddUser.Designer.cs">
       <DependentUpon>modalAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modalDayEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modalDayEdit.Designer.cs">
+      <DependentUpon>modalDayEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="modalEditDepartment.cs">
       <SubType>Form</SubType>
@@ -194,11 +206,17 @@
     <EmbeddedResource Include="formWorkers.resx">
       <DependentUpon>formWorkers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="modalAboutMe.resx">
+      <DependentUpon>modalAboutMe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="modalAddDepartment.resx">
       <DependentUpon>modalAddDepartment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modalAddUser.resx">
       <DependentUpon>modalAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modalDayEdit.resx">
+      <DependentUpon>modalDayEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modalEditDepartment.resx">
       <DependentUpon>modalEditDepartment.cs</DependentUpon>
@@ -358,6 +376,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecteezy_3d-male-character-got-an-idea-while-working-on-a-laptop_24387917_80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

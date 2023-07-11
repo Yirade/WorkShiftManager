@@ -162,7 +162,7 @@
             this.SearchBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.SearchBox.BorderRadius = 17;
             this.SearchBox.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.SearchBox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.SearchBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.SearchBox.DefaultText = "";
             this.SearchBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.SearchBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));

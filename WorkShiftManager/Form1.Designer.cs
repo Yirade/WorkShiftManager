@@ -36,9 +36,7 @@
             this.controlMaximize = new Guna.UI2.WinForms.Guna2ControlBox();
             this.contrlolClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.SideBar = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogo = new Guna.UI2.WinForms.Guna2Button();
-            this.logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.sideSeparator = new Guna.UI2.WinForms.Guna2Separator();
             this.btnSchedule = new Guna.UI2.WinForms.Guna2Button();
             this.lblVersion = new System.Windows.Forms.Label();
@@ -51,7 +49,6 @@
             this.timeSideBar = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             this.SideBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -107,9 +104,7 @@
             // 
             this.SideBar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(38)))), ((int)(((byte)(47)))));
-            this.SideBar.Controls.Add(this.guna2Button1);
             this.SideBar.Controls.Add(this.btnLogo);
-            this.SideBar.Controls.Add(this.logo);
             this.SideBar.Controls.Add(this.sideSeparator);
             this.SideBar.Controls.Add(this.btnSchedule);
             this.SideBar.Controls.Add(this.lblVersion);
@@ -124,36 +119,6 @@
             this.SideBar.Size = new System.Drawing.Size(200, 595);
             this.SideBar.TabIndex = 1;
             this.SideBar.Paint += new System.Windows.Forms.PaintEventHandler(this.SideBar_Paint);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.AnimatedGIF = true;
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BorderRadius = 21;
-            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(93)))), ((int)(((byte)(211)))));
-            this.guna2Button1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(93)))), ((int)(((byte)(211)))));
-            this.guna2Button1.CustomImages.CheckedImage = global::WorkShiftManager.Properties.Resources.dashboard_color;
-            this.guna2Button1.CustomImages.HoveredImage = global::WorkShiftManager.Properties.Resources.dashboard_color;
-            this.guna2Button1.CustomImages.Image = global::WorkShiftManager.Properties.Resources.dashboard_1_;
-            this.guna2Button1.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.CustomImages.ImageOffset = new System.Drawing.Point(2, 0);
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(38)))), ((int)(((byte)(47)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(93)))), ((int)(((byte)(211)))));
-            this.guna2Button1.Location = new System.Drawing.Point(9, 255);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(45, 45);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "Dashboard";
-            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.TextOffset = new System.Drawing.Point(70, 0);
             // 
             // btnLogo
             // 
@@ -178,21 +143,6 @@
             this.btnLogo.Size = new System.Drawing.Size(48, 45);
             this.btnLogo.TabIndex = 2;
             this.btnLogo.Click += new System.EventHandler(this.btnLogo_Click);
-            // 
-            // logo
-            // 
-            this.logo.BackColor = System.Drawing.Color.Transparent;
-            this.logo.FillColor = System.Drawing.Color.Transparent;
-            this.logo.Image = global::WorkShiftManager.Properties.Resources.logo;
-            this.logo.ImageRotate = 0F;
-            this.logo.Location = new System.Drawing.Point(9, 306);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(43, 37);
-            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logo.TabIndex = 0;
-            this.logo.TabStop = false;
-            this.logo.UseTransparentBackground = true;
-            this.logo.Click += new System.EventHandler(this.btnLogo_Click);
             // 
             // sideSeparator
             // 
@@ -286,7 +236,6 @@
             this.btnAbout.Animated = true;
             this.btnAbout.AutoRoundedCorners = true;
             this.btnAbout.BorderRadius = 21;
-            this.btnAbout.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnAbout.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(93)))), ((int)(((byte)(211)))));
             this.btnAbout.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(93)))), ((int)(((byte)(211)))));
             this.btnAbout.CustomImages.CheckedImage = global::WorkShiftManager.Properties.Resources.about_color2;
@@ -421,7 +370,6 @@
             this.guna2Panel1.ResumeLayout(false);
             this.SideBar.ResumeLayout(false);
             this.SideBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -435,7 +383,6 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2ControlBox controlMinimize;
         private Guna.UI2.WinForms.Guna2ControlBox controlMaximize;
-        private Guna.UI2.WinForms.Guna2PictureBox logo;
         private System.Windows.Forms.Label lblLogo;
         private Guna.UI2.WinForms.Guna2Button btnDashboard;
         private Guna.UI2.WinForms.Guna2Button btnWorkers;
@@ -446,7 +393,6 @@
         private Guna.UI2.WinForms.Guna2Separator sideSeparator;
         private Guna.UI2.WinForms.Guna2Button btnLogo;
         private System.Windows.Forms.Timer timeSideBar;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
 

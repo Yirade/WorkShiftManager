@@ -31,9 +31,9 @@ namespace WorkShiftManager
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.chartDep = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -79,17 +79,17 @@ namespace WorkShiftManager
             this.chartDep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(38)))), ((int)(((byte)(47)))));
             this.chartDep.BorderlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(38)))), ((int)(((byte)(47)))));
             this.chartDep.BorderSkin.PageColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(38)))), ((int)(((byte)(47)))));
-            chartArea5.Name = "ChartArea1";
-            this.chartDep.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartDep.Legends.Add(legend5);
+            chartArea1.Name = "ChartArea1";
+            this.chartDep.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartDep.Legends.Add(legend1);
             this.chartDep.Location = new System.Drawing.Point(0, 0);
             this.chartDep.Name = "chartDep";
             this.chartDep.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartDep.Series.Add(series5);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartDep.Series.Add(series1);
             this.chartDep.Size = new System.Drawing.Size(253, 335);
             this.chartDep.TabIndex = 2;
             this.chartDep.Click += new System.EventHandler(this.chartDep_Click_1);
@@ -295,7 +295,7 @@ namespace WorkShiftManager
             // flowSearch
             // 
             this.flowSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowSearch.Location = new System.Drawing.Point(768, 244);
+            this.flowSearch.Location = new System.Drawing.Point(768, 54);
             this.flowSearch.Name = "flowSearch";
             this.flowSearch.Size = new System.Drawing.Size(200, 170);
             this.flowSearch.TabIndex = 9;

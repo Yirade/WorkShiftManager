@@ -62,6 +62,12 @@ namespace WorkShiftManager
                     Department = department,
                 };
 
+                // Imposta tutti gli orari di lavoro a 00:00 di default per ciascun giorno della settimana
+                foreach (DayOfWeek dayOfWeek in Enum.GetValues(typeof(DayOfWeek)))
+                {
+                    newWorker.Schedule.Add(dayOfWeek, new WorkSchedule(TimeSpan.Zero, TimeSpan.Zero));
+                }
+
                 // Imposta l'immagine di default se non viene selezionata alcuna immagine del profilo
                 if (string.IsNullOrEmpty(selectedImagePath))
                     newWorker.ProfileImagePath = "Data\\user.png";
@@ -103,6 +109,7 @@ namespace WorkShiftManager
                 MessageBox.Show("Inserisci tutti i dati richiesti in un formato valido.");
             }
         }
+
 
         private bool ValidateName(string name)
         {

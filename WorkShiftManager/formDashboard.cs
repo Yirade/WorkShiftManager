@@ -65,9 +65,11 @@ namespace WorkShiftManager
                 SearchElement searchElement = new SearchElement();
                 searchElement.LblName.Text = worker.Name;
                 searchElement.LblDepartment.Text = worker.Department;
-                //searchElement.ImgProfile.Image = worker.ProfilePicture;
-                //searchElement.ImgProfile.Image = Image.FromFile(worker.ProfileImagePath);
-                searchElement.ImgProfile.Image = System.Drawing.Image.FromFile(worker.ProfileImagePath);
+                try { searchElement.ImgProfile.Image = Image.FromFile(worker.ProfileImagePath); }
+                catch (Exception ex)
+                {
+                    searchElement.ImgProfile.Image = Properties.Resources.user;
+                }
                 searchElement.Tag = worker;
                 searchElement.Size = new Size(flowSearch.ClientSize.Width, 20);
                 searchElement.AutoSize = true;
