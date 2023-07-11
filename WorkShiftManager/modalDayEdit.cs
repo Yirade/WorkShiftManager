@@ -61,5 +61,14 @@ namespace WorkShiftManager
             this.Close();
 
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Globals.DataManager.SetWorkerSchedule(workerId, lblName.Text, TimeSpan.Zero, TimeSpan.Zero);
+
+            Globals.DataManager.SaveData("data.xml");
+
+            this.Close();
+        }
     }
 }

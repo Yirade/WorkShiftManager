@@ -109,7 +109,8 @@
             this.timeStart.BorderRadius = 17;
             this.timeStart.Checked = true;
             this.timeStart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.timeStart.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.timeStart.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeStart.ForeColor = System.Drawing.Color.White;
             this.timeStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.timeStart.Location = new System.Drawing.Point(99, 21);
             this.timeStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -128,7 +129,8 @@
             this.timeEnd.BorderRadius = 17;
             this.timeEnd.Checked = true;
             this.timeEnd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.timeEnd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.timeEnd.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeEnd.ForeColor = System.Drawing.Color.White;
             this.timeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.timeEnd.Location = new System.Drawing.Point(99, 74);
             this.timeEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -203,6 +205,7 @@
             this.btnDelete.Size = new System.Drawing.Size(125, 45);
             this.btnDelete.TabIndex = 15;
             this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // modalDayEdit
             // 

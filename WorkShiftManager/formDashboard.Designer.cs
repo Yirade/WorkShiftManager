@@ -41,9 +41,6 @@ namespace WorkShiftManager
             this.panelNr = new Guna.UI2.WinForms.Guna2Panel();
             this.lblNr = new System.Windows.Forms.Label();
             this.lblNrTitle = new System.Windows.Forms.Label();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.date1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblDep = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,7 +53,6 @@ namespace WorkShiftManager
             ((System.ComponentModel.ISupportInitialize)(this.chartDep)).BeginInit();
             this.panelPie.SuspendLayout();
             this.panelNr.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.panelTxtNote.SuspendLayout();
@@ -139,62 +135,6 @@ namespace WorkShiftManager
             this.lblNrTitle.Size = new System.Drawing.Size(119, 37);
             this.lblNrTitle.TabIndex = 0;
             this.lblNrTitle.Text = "Workers:";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BorderRadius = 22;
-            this.guna2Panel1.Controls.Add(this.guna2DateTimePicker1);
-            this.guna2Panel1.Controls.Add(this.date1);
-            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(531, 66);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(234, 100);
-            this.guna2Panel1.TabIndex = 6;
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.Animated = true;
-            this.guna2DateTimePicker1.AutoRoundedCorners = true;
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker1.BorderRadius = 17;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.CustomFormat = "HH:mm";
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(54, 54);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShowUpDown = true;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(160, 36);
-            this.guna2DateTimePicker1.TabIndex = 10;
-            this.guna2DateTimePicker1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.guna2DateTimePicker1.UseTransparentBackground = true;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 7, 9, 8, 0, 0, 0);
-            // 
-            // date1
-            // 
-            this.date1.Animated = true;
-            this.date1.AutoRoundedCorners = true;
-            this.date1.BackColor = System.Drawing.Color.Transparent;
-            this.date1.BorderRadius = 17;
-            this.date1.Checked = true;
-            this.date1.CustomFormat = "HH:mm";
-            this.date1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.date1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-            this.date1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.date1.Location = new System.Drawing.Point(54, 9);
-            this.date1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.date1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.date1.Name = "date1";
-            this.date1.ShowUpDown = true;
-            this.date1.Size = new System.Drawing.Size(160, 36);
-            this.date1.TabIndex = 9;
-            this.date1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.date1.UseTransparentBackground = true;
-            this.date1.Value = new System.DateTime(2023, 7, 9, 8, 0, 0, 0);
             // 
             // guna2Panel2
             // 
@@ -344,7 +284,6 @@ namespace WorkShiftManager
             this.Controls.Add(this.SearchBox);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
-            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panelNr);
             this.Controls.Add(this.panelPie);
             this.Controls.Add(this.label1);
@@ -360,7 +299,6 @@ namespace WorkShiftManager
             this.panelPie.ResumeLayout(false);
             this.panelNr.ResumeLayout(false);
             this.panelNr.PerformLayout();
-            this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
@@ -380,7 +318,6 @@ namespace WorkShiftManager
         private Guna.UI2.WinForms.Guna2Panel panelPie;
         private Guna.UI2.WinForms.Guna2Panel panelNr;
         private System.Windows.Forms.Label lblNrTitle;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label lblNr;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label lblDep;
@@ -389,8 +326,6 @@ namespace WorkShiftManager
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txtNote;
         private Guna.UI2.WinForms.Guna2Panel panelTxtNote;
-        private Guna.UI2.WinForms.Guna2DateTimePicker date1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private System.Windows.Forms.FlowLayoutPanel flowSearch;
     }
 }
