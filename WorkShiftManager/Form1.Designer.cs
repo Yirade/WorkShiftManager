@@ -191,9 +191,9 @@
             this.lblVersion.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.lblVersion.Location = new System.Drawing.Point(1, 573);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(62, 13);
+            this.lblVersion.Size = new System.Drawing.Size(57, 13);
             this.lblVersion.TabIndex = 6;
-            this.lblVersion.Text = "V 0.3 Alpha";
+            this.lblVersion.Text = "V 0.1 Beta";
             this.lblVersion.Click += new System.EventHandler(this.lblVersion_Click);
             // 
             // btnSettings
