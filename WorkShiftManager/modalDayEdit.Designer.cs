@@ -32,20 +32,22 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.lblName = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
+            this.timeEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.timeStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.timeStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.timeEnd = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
             // 
+            this.guna2BorderlessForm1.BorderRadius = 22;
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.ResizeForm = false;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // lblName
@@ -78,6 +80,70 @@
             this.guna2Panel1.Size = new System.Drawing.Size(260, 180);
             this.guna2Panel1.TabIndex = 1;
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Animated = true;
+            this.btnDelete.AutoRoundedCorners = true;
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.BorderRadius = 21;
+            this.btnDelete.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(65)))), ((int)(((byte)(57)))));
+            this.btnDelete.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(65)))), ((int)(((byte)(57)))));
+            this.btnDelete.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(65)))), ((int)(((byte)(57)))));
+            this.btnDelete.Location = new System.Drawing.Point(67, 122);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(125, 45);
+            this.btnDelete.TabIndex = 15;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // timeEnd
+            // 
+            this.timeEnd.AutoRoundedCorners = true;
+            this.timeEnd.BackColor = System.Drawing.Color.Transparent;
+            this.timeEnd.BorderRadius = 17;
+            this.timeEnd.Checked = true;
+            this.timeEnd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.timeEnd.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeEnd.ForeColor = System.Drawing.Color.White;
+            this.timeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.timeEnd.Location = new System.Drawing.Point(99, 74);
+            this.timeEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.timeEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.timeEnd.Name = "timeEnd";
+            this.timeEnd.ShowUpDown = true;
+            this.timeEnd.Size = new System.Drawing.Size(140, 36);
+            this.timeEnd.TabIndex = 3;
+            this.timeEnd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.timeEnd.Value = new System.DateTime(2023, 7, 11, 18, 0, 0, 0);
+            // 
+            // timeStart
+            // 
+            this.timeStart.AutoRoundedCorners = true;
+            this.timeStart.BackColor = System.Drawing.Color.Transparent;
+            this.timeStart.BorderRadius = 17;
+            this.timeStart.Checked = true;
+            this.timeStart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.timeStart.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeStart.ForeColor = System.Drawing.Color.White;
+            this.timeStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.timeStart.Location = new System.Drawing.Point(99, 21);
+            this.timeStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.timeStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.timeStart.Name = "timeStart";
+            this.timeStart.ShowUpDown = true;
+            this.timeStart.Size = new System.Drawing.Size(140, 36);
+            this.timeStart.TabIndex = 2;
+            this.timeStart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.timeStart.Value = new System.DateTime(2023, 7, 11, 9, 0, 0, 0);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -101,46 +167,6 @@
             this.label1.Size = new System.Drawing.Size(53, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Start";
-            // 
-            // timeStart
-            // 
-            this.timeStart.AutoRoundedCorners = true;
-            this.timeStart.BackColor = System.Drawing.Color.Transparent;
-            this.timeStart.BorderRadius = 17;
-            this.timeStart.Checked = true;
-            this.timeStart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.timeStart.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeStart.ForeColor = System.Drawing.Color.White;
-            this.timeStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.timeStart.Location = new System.Drawing.Point(99, 21);
-            this.timeStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.timeStart.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.timeStart.Name = "timeStart";
-            this.timeStart.ShowUpDown = true;
-            this.timeStart.Size = new System.Drawing.Size(140, 36);
-            this.timeStart.TabIndex = 2;
-            this.timeStart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.timeStart.Value = new System.DateTime(2023, 7, 11, 9, 0, 0, 0);
-            // 
-            // timeEnd
-            // 
-            this.timeEnd.AutoRoundedCorners = true;
-            this.timeEnd.BackColor = System.Drawing.Color.Transparent;
-            this.timeEnd.BorderRadius = 17;
-            this.timeEnd.Checked = true;
-            this.timeEnd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.timeEnd.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeEnd.ForeColor = System.Drawing.Color.White;
-            this.timeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.timeEnd.Location = new System.Drawing.Point(99, 74);
-            this.timeEnd.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.timeEnd.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.timeEnd.Name = "timeEnd";
-            this.timeEnd.ShowUpDown = true;
-            this.timeEnd.Size = new System.Drawing.Size(140, 36);
-            this.timeEnd.TabIndex = 3;
-            this.timeEnd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.timeEnd.Value = new System.DateTime(2023, 7, 11, 18, 0, 0, 0);
             // 
             // btnCancel
             // 
@@ -182,30 +208,6 @@
             this.btnEdit.TabIndex = 13;
             this.btnEdit.Text = "Edit";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Animated = true;
-            this.btnDelete.AutoRoundedCorners = true;
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btnDelete.BorderRadius = 21;
-            this.btnDelete.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(65)))), ((int)(((byte)(57)))));
-            this.btnDelete.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(65)))), ((int)(((byte)(57)))));
-            this.btnDelete.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(65)))), ((int)(((byte)(57)))));
-            this.btnDelete.Location = new System.Drawing.Point(67, 122);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(125, 45);
-            this.btnDelete.TabIndex = 15;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // modalDayEdit
             // 

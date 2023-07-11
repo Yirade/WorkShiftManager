@@ -45,14 +45,17 @@
             // guna2BorderlessForm1
             // 
             this.guna2BorderlessForm1.AnimateWindow = true;
+            this.guna2BorderlessForm1.BorderRadius = 22;
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.ResizeForm = false;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // panelAboutMe
             // 
             this.panelAboutMe.BorderRadius = 22;
             this.panelAboutMe.Controls.Add(this.label1);
+            this.panelAboutMe.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
             this.panelAboutMe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(52)))), ((int)(((byte)(64)))));
             this.panelAboutMe.Location = new System.Drawing.Point(71, 44);
             this.panelAboutMe.Name = "panelAboutMe";

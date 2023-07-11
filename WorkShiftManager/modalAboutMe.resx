@@ -120,6 +120,9 @@
   <metadata name="guna2BorderlessForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="lblInfo.Text" xml:space="preserve">
+    <value>Hey there, I'm Yirade, just your average student, and this little project is my attempt to conquer the academic world. Brace yourself, because it's gonna be mind-blowing! If you're curious to know more about the genius behind this masterpiece (spoiler: it's me), check out the following links. Get ready to have your mind blown!</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1875,8 +1878,5 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP4PAADwAwAAwAMAAMJzAADC
         cwAAwnMAAMJzAADCcwAAwnMAAMJzAADCYwAAwAMAAPADAAD4HwAA//8AAA==
 </value>
-  </data>
-  <data name="lblInfo.Text" xml:space="preserve">
-    <value>Hey there, I'm Yirade, just your average student, and this little project is my attempt to conquer the academic world. Brace yourself, because it's gonna be mind-blowing! If you're curious to know more about the genius behind this masterpiece (spoiler: it's me), check out the following links. Get ready to have your mind blown!</value>
   </data>
 </root>
