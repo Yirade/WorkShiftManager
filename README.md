@@ -2,6 +2,11 @@
 
 Salut! Acesta este un proiect pentru materia PIU (Programarea Interfațelor de Utilizator) ce reprezintă o aplicație simplă pentru gestiunea programului de lucru al angajaților unei companii. 🏢
 
+<a href="https://img.shields.io/badge/Work%20Shift%20Manager-Visit%20Notion-brightgreen.svg)](https://yirade.notion.site/yirade/Work-Shift-Manager-536aeeaaef774387b25a298f056f557c">
+  <img src="https://i.ibb.co/nQSMK5f/button-2.png" >
+</a>
+
+
 # Descriere 📝
 
 Aplicația permite crearea unui program de lucru pentru fiecare departament din companie și adăugarea de angajați la fiecare departament. Fiecare program de lucru poate fi compus din mai multe zile de lucru, cu orele de început și de sfârșit corespunzătoare. După ce un program de lucru este creat și angajații sunt adăugați, aplicația permite afișarea informațiilor despre departament, inclusiv programul de lucru al acestuia și lista de angajați. 🤖💼
